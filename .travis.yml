@@ -16,9 +16,8 @@ matrix:
       install:
         - node -v
         - npm install -g danger
-        - make install
       script:
-        - danger-swift ci
+        - swift run danger-swift ci
 
     - os: linux
       language: generic
